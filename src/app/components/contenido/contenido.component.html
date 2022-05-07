@@ -1,0 +1,11 @@
+<div class="d-flex flex-wrap">
+    <div class="card bg-dark text-white my-2 mx-2" *ngFor="let item of content">
+        <img [src]="item.img" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h5 class="card-title">{{ item.titulo }}</h5>
+            <p class="card-text">{{ item.salida }} <br><br> {{ item.combo }}</p>
+            <p class="card-text">{{ item.precio }} <br> {{ item.imp }}</p>
+        </div>
+    </div>
+
+</div>
